@@ -7,8 +7,16 @@ const PRIVATE_KEY = 'xxxYourPrivateKeyxxx'; // private key Your wallet account
 const CONTRACT_ADDRESS = '0x4D1E2145082d0AB0fDa4a973dC4887C7295e21aB'; // contract
 const RPC_URL = 'https://rpc.taiko.xyz'; // rpc chain
 const VOTE_VALUE = ethers.parseEther('0.0001'); // value
-const DELAY_MS = 5000; // timme send - 5000=5ms
+const DELAY_MS = 5000; // timme send - 5000ms=5s
 const SCAN_URL = 'https://taikoscan.io/tx/'; // explorer - /tx/
+
+// Test - on Optimism Sepolia Testnet
+// const PRIVATE_KEY = 'xxxYourPrivateKeyxxx'; // private key Your wallet account
+// const CONTRACT_ADDRESS = '0x88C50052FA4F2D957eACc937a0cD55923a9C13F9'; // contract
+// const RPC_URL = 'https://sepolia.optimism.io'; // rpc chain
+// const VOTE_VALUE = ethers.parseEther('0.0001'); // value
+// const DELAY_MS = 5000; // timme send - 5000ms=5s
+// const SCAN_URL = 'https://optimism-sepolia.blockscout.com/tx/'; // explorer - /tx/
 // --------------------------------------------------- //
 
 const provider = new ethers.JsonRpcProvider(RPC_URL);
